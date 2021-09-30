@@ -10,7 +10,7 @@ class Solution24Test {
 
     @Test
     void isAnagram(){
-        assertEquals(true, sol.isAnagram("antler", "learnt"));
+        assertEquals(true, sol.isAnagram("learnt", "antler"));
     }
 
 
