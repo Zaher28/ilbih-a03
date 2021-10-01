@@ -10,6 +10,6 @@ class Solution25Test {
 
     @Test
     void passwordValidator() {
-        assertEquals(3, sol.passwordValidator("abc123xyz"));
+        assertEquals(2, sol.passwordValidator("abc123xyz"));
     }
 }
