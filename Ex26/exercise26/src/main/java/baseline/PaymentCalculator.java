@@ -12,12 +12,13 @@ public class PaymentCalculator {
         this.monthPayment = monthPayment;
         dailyRate = (apr/100.0)/365.0;
     }
-    //calculates months left to pay off credit card
+    //calculates months left to pay off credit card based on formula
     public int calculateMonthsUntilPaidOff(){
 
         int monthsLeft;
 
-
+        //calculates months left
+        monthsLeft =(int) Math.ceil((-1.0/30.0)* (Math.log(1 + (balance/monthPayment)*(1-Math.pow(1+dailyRate,30))))/(Math.log(1+dailyRate)));
 
         return monthsLeft;
     }
