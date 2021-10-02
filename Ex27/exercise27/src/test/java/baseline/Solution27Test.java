@@ -10,26 +10,22 @@ class Solution27Test {
 
     @Test
     void validateFirstName() {
-        assertEquals("The first name must be at least 2 characters long.", sol.validateFirstName("J") );
+        assertEquals("The first name must be at least 2 characters long.\n", sol.validateFirstName("J"));
     }
 
     @Test
     void validateLastName() {
-        assertEquals("The last name must be filled in.", sol.validateLastName(""));
+        assertEquals("The last name must be at least 2 characters long.\n" + "The last name must be filled in.\n", sol.validateLastName(""));
     }
 
     @Test
     void validateZIP() {
-        assertEquals("The zipcode must be a 5 digit number.", sol.validateZIP("ABCDE"));
+        assertEquals("The zipcode must be a 5 digit number.\n", sol.validateZIP("ABCDE"));
     }
 
     @Test
     void validateID() {
-        assertEquals("The employee ID must be in the formal of AA-1234.",sol.validateID("A12-1234"));
+        assertEquals("The employee ID must be in the format of AA-1234.\n", sol.validateID("A12-1234"));
     }
 
-    @Test
-    void validateInput() {
-        assertEquals("There were no errors found.", sol.validateInput("John", "Johnson", "55555", "TK-4321"));
-    }
 }
