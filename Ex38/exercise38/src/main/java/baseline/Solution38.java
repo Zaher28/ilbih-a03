@@ -8,10 +8,18 @@ import java.util.Scanner;
 
 public class Solution38 {
 
+    //method that converts a string into an int array
+    public int[] convertStringToIntArray(String numbers){
+
+
+
+    }
 
     //method that takes in an array of numbers and
     // returns an array with only the even ones
     public int[] filterEvenNumbers(int[] numbers){
+
+
 
     }
 
@@ -21,9 +29,13 @@ public class Solution38 {
     //main method
     public static void main(String[] args){
 
+        Solution38 sol = new Solution38();
+
         //ask for numbers and store them in String to later parse into array
         System.out.print("Enter a list of numbers, separated by spaces: ");
+        String numbers = scan.nextLine();
 
-        
+
+
     }
 }
