@@ -5,6 +5,7 @@
 
 package baseline;
 
+import java.security.spec.RSAOtherPrimeInfo;
 import java.util.Scanner;
 
 public class Solution33 {
@@ -16,7 +17,15 @@ public class Solution33 {
 
     //method which takes in a list of options, then prompts the user for a question
     //and prints out a response from the "Magic 8 Ball"
-    public void shakeMagic8Ball(int[] arr){
+    public void shakeMagic8Ball(String[] arr){
+        //asks and takes in question
+        System.out.println("What's your question?");
+        scan.nextLine();
+        //"shakes" the 8 ball
+        int rand =(int) (Math.random()*4);
+
+        System.out.printf("\n%s",arr[rand]);
+
 
     }
 
@@ -26,6 +35,14 @@ public class Solution33 {
     //main method
     public static void main(String[] args){
 
+        Solution33 sol = new Solution33();
+
+        //list of responses
+        String[] list;
+        list = new String[]{"Yes,", "No,", "Maybe,", "Ask again later."};
+
+        //"Shaking" the magic 8 ball
+        sol.shakeMagic8Ball(list);
 
 
     }
