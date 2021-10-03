@@ -1,6 +1,9 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solutions
+ *  Copyright 2021 Zaher Ilbih
+ */
 package baseline;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Solution26 {
