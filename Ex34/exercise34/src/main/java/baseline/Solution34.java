@@ -4,6 +4,10 @@
  */
 package baseline;
 
+//to use a list
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution34 {
 
     /*
@@ -14,7 +18,7 @@ public class Solution34 {
      */
 
     //method that takes in the list of names and the name to remove and removes it
-    public String[] removeEmployeeFromList(String[] list, String nameToRemove){
+    public void removeEmployeeFromList(List<String> employees, String nameToRemove){
 
     }
 
@@ -22,10 +26,14 @@ public class Solution34 {
     public static void main(String[] args){
 
         //list of employees
-        String[] list;
-        list = new String[]{"John Smith","Jackie Jackson", "Chris Jones","Amanda Cullen", "Jeremy Goodwin"};
+       List<String> employees = new ArrayList<String>();
+       employees.add("John Smith");
+       employees.add("Jackie Jackson");
+       employees.add("Chris Jones");
+       employees.add("Amanda Cullen");
+       employees.add("Jeremy Goodwin");
 
-        
+
     }
 
 }
